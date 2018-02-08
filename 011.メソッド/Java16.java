@@ -29,9 +29,9 @@ public class Java16 extends HttpServlet {
      */
     
     void myprofile(PrintWriter pw) {
-    pw.print("私の名前は林です<br>");
-    pw.print("好きな音楽はジャズ<br>");
-    pw.print("趣味はゲームと旅行です<br>");
+    pw.print("私の名前は猪八重佑太です<br>");
+    pw.print("1994年8月13日<br>");
+    pw.print("趣味は読書です<br>");
     pw.print("<br>");
 }
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
