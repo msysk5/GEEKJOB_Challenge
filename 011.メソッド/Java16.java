@@ -27,20 +27,21 @@ public class Java16 extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    
+    void myprofile(PrintWriter pw) {
+    pw.print("私の名前は林です<br>");
+    pw.print("好きな音楽はジャズ<br>");
+    pw.print("趣味はゲームと旅行です<br>");
+    pw.print("<br>");
+}
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-           
-            String myprofile[] = {"猪八重佑太","1994年8月13日","ゲーム"};
-            for (int i = 0; i < 10; i++) {
-            out.println(myprofile[0] + "<br>");
-            out.println(myprofile[1] + "<br>");
-            out.println(myprofile[2] + "<br>");
-            out.println("<br>");
-                
-        }
-        }
+           for (int i = 0; i < 10; i++){
+            myprofile(out);
+           }
+           }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
