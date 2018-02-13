@@ -28,24 +28,21 @@ public class method1 extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     
-    boolean checkPlus(int num) {
-        if (num % 2 == 0) { return true; }
-        else { return false; }
+   void check(int num, PrintWriter pw){
+        if(num % 2 == 0){pw.print("偶数");}
+        else{pw.print("奇数");}
     }
-    
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
       
-    if (checkPlus(22)) {
-        out.print("偶数");
-    } else {
-        out.print("奇数");
-    }        
+        check(23,out);
+      
+    }          
         }
-    }
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
