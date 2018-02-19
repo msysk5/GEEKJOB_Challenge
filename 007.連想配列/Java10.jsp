@@ -8,31 +8,14 @@
 <!DOCTYPE html>
 <%@ page import="java.util.*" %>
 <%
-    HashMap<String, String> user1 =
+    HashMap<String, String> data =
             new HashMap<String, String>();
-    HashMap<String, String> user2 =
-            new HashMap<String, String>();
-    HashMap<String, String> user3 =
-            new HashMap<String, String>();
-    HashMap<String, String> user4 =
-            new HashMap<String, String>();
+   
+    data.put("1","AAA");
+    data.put("hello","world");
+    data.put("soeda","33");
+    data.put("20","20");
     
-    user1.put("1","AAA");
-    user2.put("hello","world");
-    user3.put("soeda","33");
-    user4.put("20","20");
-    
- ArrayList<HashMap> data = new ArrayList<HashMap>();   
-    data.add(user1);
-    data.add(user2);
-    data.add(user3);
-    data.add(user4);
-    
-    out.println(user1);
-    out.println(user2);
-    out.println(user3);
-    out.print(user4);
-    
-    
-    
+    out.println(data);
+   
 %>
