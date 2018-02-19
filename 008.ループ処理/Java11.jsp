@@ -1,15 +1,15 @@
 <%-- 
     Document   : Java11
-    Created on : 2018/02/06, 11:19:24
+    Created on : 2018/02/07, 11:47:10
     Author     : guest1Day
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
+<%@ page import="java.text.*" %>
 <%
-    int total = 1;
-    for (int i = 0; i < 20; i++){
+    long total = 1;
+    for (long i = 0; i < 20; i++){
     total *= 8;
 }
 
